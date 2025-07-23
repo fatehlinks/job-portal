@@ -1,0 +1,10 @@
+$("body").on("click", ".pagination a", function () {
+  var theUrl = $(this).attr("href");
+  $(".jobs_list").load(theUrl);
+  return false;
+});
+$("body").on("click", ".pagination a", function () {
+  var theUrl = $(this).attr("href");
+  $(".applied_jobs_list").load(theUrl);
+  return false;
+});
